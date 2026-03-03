@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CV Interactivo</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi CV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item">
+                        <button id="btn-tema" class="btn btn-outline-light btn-sm ms-2">Cambiar a Modo Oscuro</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<main class="container my-5">
+        <section id="perfil" class="text-center mb-5">
+            <img src="assets/img/yo.jpeg" alt="Foto de perfil" class="rounded-circle  mb-3" style="width: 200px">
+            <h1>Hola mi nombre es Patricia Aravena Bolívar</h1>
+            
+        </section>
+
+        <div class="mx-3 container" id="sobreMi">
+            <h3>Sobre mí</h3>
+            <p>Soy de profesión Administrador Turistico Cultural, aunque en la actualidad me dedico a crear bisutería (aros, collares, anillos) y tejidos (agujas y crochet) que vendo en distintas ferias que se realizan en mi ciudad. También estoy realizando un curso en el que estoy aprendiendo sobre desarrollo y programacion Web.</p>
+
+        <!-- Experiencia y Formación -->
+        <section id="experiencia" class="row">
+            <div class="col-md-6">
+                <h3>Experiencia Laboral</h3>
+                <ul>
+                    <li>Administrativo - COPESA S.A. (2017-2024)</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Formación Académica</h3>
+                <ul>
+                    <li> Administrator Turistico Cultural - Universidad de Valparaíso (2012)</li>
+                    <li> Egresada de Ingeniería Comercial - Universidad de Valparaíso (2016)</li>
+                    <li> Estudiante de Desarrollo de Aplicaciones FRONT END TRAINEE - Kibernum Capacitación S.A. (En la actualdiad)</li>
+                </ul>
+            </div>
+        </section>
+        
+        
+<section id="contacto" class="container mt-5 pb-5">
+    <h2 class="text-center mb-4">¿Hablemos?</h2>
+    <div class="row g-4 text-center">
+        
+        <div class="col-md-3">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body">
+                    <img src="assets/img/wsp.png" width="40" alt="WhatsApp" class="mb-3">
+                    <h5 class="card-title">WhatsApp</h5>
+                    <p class="card-text text-muted">+569 95835291</p>
+                    <a href="https://wa.me" class="btn btn-outline-success btn-sm">Enviar mensaje</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body">
+                    <img src="assets/img/insta.png" width="40" alt="Instagram" class="mb-3">
+                    <h5 class="card-title">Instagram</h5>
+                    <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-danger btn-sm">Ver perfil</a>
+                </div>
+            </div>
+        </div>
+                <div class="col-md-3">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body">
+                    <img src="assets/img/mail (2).png" width="40" alt="Instagram" class="mb-3"> 
+                    <h5 class="card-title">Correo</h5>
+                    <p class="small text-muted">patricia.aravena.bolivar@gmail.com</p>
+                    <a href="mailto:patricia.aravena.bolivar@gmail.com" class="btn btn-outline-primary btn-sm">Escribir</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body">
+                    <img src="assets/img/github.png" width="40" alt="GitHub" class="mb-3">
+                    <h5 class="card-title">GitHub</h5>
+                    <a href="https://github.com" target="_blank" class="btn btn-outline-dark btn-sm">Ver proyectos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container my-5" id="contacto">
+                    <h2 class="mb-4">Déjame tus datos si quieres que te contacte</h2>
+                    <form action="" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label" for="nombre">Nombre</label>
+                                <input type="text" class="form-control" name="nombre" id="nombre">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" class="form-control" name="email" id="email">
+                            </div>
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" name="mensaje" id="mensaje" rows="4"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="acepto" required>
+                                    <label for="acepto" class="form-check-label">Acepto la política de datos</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary">Enviar</button>
+                                <button class="btn btn-outline-secondary" type="reset">Limpiar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
